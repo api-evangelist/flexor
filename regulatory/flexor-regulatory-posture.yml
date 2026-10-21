@@ -1,0 +1,24 @@
+generated: '2026-10-20'
+method: probed
+source: https://flexor.ai/privacy-policy/
+signals:
+  data_subject_request:
+    - source: https://flexor.ai/privacy-policy/
+      http_status: 200
+      fetched: /tmp/flexor_privacy.html
+      quote: "You have the right to request access to your personal information held by us, along with details on how it is processed, subject to certain conditions."
+      section: "Your Rights"
+      note: Grants data subject right of access.
+    - source: https://flexor.ai/privacy-policy/
+      http_status: 200
+      fetched: /tmp/flexor_privacy.html
+      quote: "You have the right to data portability of personal information concerning you that you provided us in a structured, commonly used, and machine-readable format, subject to certain conditions."
+      section: "Your Rights"
+      note: Provides data portability right.
+  data_retention:
+    - source: https://flexor.ai/privacy-policy/
+      http_status: 200
+      fetched: /tmp/flexor_privacy.html
+      quote: "Retention of your information. Your information will be stored until we delete our records, and we proactively delete it, or if you send a valid deletion request. Please note that in some circumstances we may store your information for longer periods of time, for example (i) where we are required to do so in accordance with legal, regulatory, tax or accounting requirements, or (ii) for us to have an accurate record of your dealings with us in the event of any complaints or challenges, and/or (iii) if we reasonably believe there is a prospect of litigation relating to your information or dealings."
+      section: "Data Retention"
+      note: Describes retention period and exceptions.

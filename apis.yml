@@ -1,23 +1,73 @@
 aid: flexor
+
 name: Flexor
-description: 'Flexor is a company surfaced via the API Evangelist harvest backlog (source: g2-catalog)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://flexor.ai/wp-content/uploads/2026/05/Flexor-Open-Graph-Image.jpg
+
+description: 'Flexor AI provides an enterprise data platform that transforms unstructured data into AI‑ready context. Their solution automates data preparation, structuring, and retrieval, delivering higher accuracy, lower token costs, and sub‑second latency for AI agents across industries such as finance, healthcare, and manufacturing.'
+
 url: https://raw.githubusercontent.com/api-evangelist/flexor/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-20 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-20'
+
 modified: '2026-10-20'
+
 tags:
 - Company
-apis: []
+- AI
+- Data Platform
+- Enterprise
+- Unstructured Data
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: LLMsTxt
+  url: llms/flexor-llms.txt
+- type: Hosts
+  url: hosts/flexor-hosts.yml
+- type: Vendors
+  url: vendors/flexor-vendors.yml
+- type: Newsroom
+  url: https://flexor.ai/news/flexor-snowflake-integration/
+- type: DomainSecurity
+  url: security/flexor-domain-security.yml
 - type: Website
   url: https://flexor.ai/
+- type: Blog
+  url: https://flexor.ai/blog/
+- type: PrivacyPolicy
+  url: https://flexor.ai/privacy-policy/
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-20'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://flexor.ai/
+    status: 200
+x-enrichment:
+  date: '2026-10-20'
+  status: enriched
+  artifacts_added: 10
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

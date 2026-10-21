@@ -1,0 +1,16 @@
+generated: '2026-10-20'
+method: none
+source:
+- https://zapier.com/apps/flexor/integrations
+- https://n8n.io/integrations/flexor/
+- https://composio.dev/toolkits/flexor
+- https://monid.ai/tools/flexor
+checked:
+- https://composio.dev/toolkits/flexor
+- https://monid.ai/tools/flexor
+- https://n8n.io/integrations/flexor/
+- https://zapier.com/apps/flexor/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
